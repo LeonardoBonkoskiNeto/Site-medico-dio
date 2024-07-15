@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estrutura</title>
+    <style>
+        span{  
+            font-weight: bold;
+            color: rgb(51, 199, 14)
+        }
+        #loc {
+            display: flex;
+            justify-content: center  ;
+        }
+        #dov{
+            display: flex;
+            justify-content: center  ;
+        }
+        #vof{
+            display: flex;
+            justify-content: center  ;
+        }
+        #dov2{
+            display: flex;
+            justify-content: center  ;
+             }
+             table {
+            -webkit-box-shadow: 10px 14px 5px 0px rgba(0,0,0,0.47);
+            -moz-box-shadow: 10px 14px 5px 0px rgba(0,0,0,0.47);
+            border: solid 1px gray;
+        }
+        table  th {
+            background-color: rgb(14, 11, 11);
+            color: white;
+        }
+        table tfoot td {
+            background-color: gray;
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: rgb(150, 170, 170);
+        }
+        table tbody tr:hover td {
+            background-color: bisque;
+        }
+        table tr:hover td {
+            background-color: blanchedalmond;
+        }
+    </style>
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <h1 id="inicio">Uny<span>medica</span></h1>
+    <hr />
+    
+    <h2>índice</h2>
+    
+    <ul>
+        
+        <li><a href="#">Página principal</a></li>
+        <li><a href="#">sobre a clínica</a></li>
+        <li><a href="#">horário de atendimento</a></li>
+        <li><a href="#">Contatos</a></li>
+        <div id="dov">
+            <img src="Clínico-Médico-scaled.jpg" width="700" height="500" />
+        </div>
+    </ul>
+    <h1 align="center">Sobre nós</h1>
+
+    <div id="vof">
+    <small><a href="#inicio" >(voltar)</a></small>
+    </div>
+
+    <p align="center">Desde 1970 temos como principal objetivo a saúde e o bem estar do paciente, vizando sempre o profissionalismo,<br>
+    a ética, a moral e a integridade, tanto dos pacientes quanto dos nossos médicos e funcionários, recebendo inúmeras<br>
+    premiações dentre elas, great place to work, excelente lugar para trabalhar, de lugar mais limpo e de melhor atendi-<br>
+    mento e de melhor variedade de tratamentos.
+    <div id="dov2">
+        <img src="hospital.jpeg" width="700" height="500">
+    </div>
+    </p>
+    
+    <h1 align="center">horários de atendimento</h1>
+
+    <div id="vof">
+    <small><a href="#inicio" >(voltar)</a></small>
+    </div>
+    <p align="center">estamos em horário de funcionamento de domingo a domingo 24h<br>
+        inclusive feriados sempre em disposição  para melhor atende-lo<br>
+        <thead>
+            <table summary="esta tabela diz os dados dos pacientes" height="80" width="560" align="center" cellspacing="0" cellpadding="10">
+            <tr>
+                <th colspan="4">Horários disponíveis</th>
+            </tr>
+            <tr id="1">
+                <th title="nome do paciente">Serviços</th>
+                <th title="idade do paciente">Segunda a sabado</th>
+                <th title="sexo do paciente">domingos</th>
+                <th title="sexo do paciente">feriados</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="2">
+                <td>Clínica geral</td>
+                <td>08h-19h</td>
+                <td>08h-19h</td>
+                <td>08h-19h</td>
+            </tr>
+            <tr id="3">
+                <td>psicologia</td>
+                <td>08h-19h</td>
+                <td>08h-19h</td>
+                <td>08h-19h</td>
+            </tr>
+            <tr id="4">
+                <td>pediatria</td>
+                <td>08h-19h</td>
+                <td>08h-19h</td>
+                <td>08h-19h</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr id="5">
+                <td>oftamologista</td>
+                <td>08h-19h</td>
+                <td>08h-19h</td>
+                <td>08h-19h</td>
+            </tr>
+            
+        </tfoot>
+    
+        </table>
+
+        
+       
+
+    </p>
+    <h1 align="center">Contatos</h1>
+
+    <div id="vof">
+    <small><a href="#inicio" >(voltar)</a></small>
+    </div>
+    <p align="center">Telefone: 4111111-1111</p>
+    <p align="center">whatsapp: 4111111-1111</p>
+    <p align="center">Email: unymedica@gmail.com</p><br>
+    <h1 align="center">Formulário de cadastro</h1>
+    <div>
+    <form method="post" name="formulário de cadastro"onsubmit="alert('enviei o formulario');" autocomplete="off" target="_blank" method="post" action="https://" align="center">
+        <label>nome:</label> <input type="text" name="name"><br>
+        <label>E-mail:</label> <input type="email" name="email"><br>
+        <label>senha:</label> <input type="password" name="password"><br>
+        <label>assunto</label> <input type="text" name="text"><br>
+        <label>mansagem:</label> 
+        <textarea name="message"></textarea><br>
+        <button type="submit">enviar</button><br>
+        
+        <button onclick="apagarTexto()">limpar</button>
+        </div>
+   <div id="loc">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58523.942802399804!2d-46.80913981779782!3d-23.54162106032687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9fa8389dbd1%3A0x2bae35d23be1a0f6!2sARCA!5e0!3m2!1spt-BR!2sbr!4v1721079129780!5m2!1spt-BR!2sbr" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+</div>
+<h1 align="center">Av.Manuel Bandeira, 360 -Vila Leopoldina, São Paulo</h1>
+</body>
+</html>

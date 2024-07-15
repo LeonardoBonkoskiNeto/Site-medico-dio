@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de cadastro</title>
+</head>
+<body>
+    <form method="post" name="signup"onsubmit="alert('enviei o formulario');" autocomplete="off" target="_blank" method="post" action="https://">
+        <label>nome:</label> <input type="text" name="name"><br>
+        <label>idade:</label> <input type="number" name="age" min="11" max="100"><br>
+        <label>senha:</label> <input type="password" name="password"><br>
+        <label>nível de  sastifação</label> <input type="range" name="nível"><br>
+        <label>date</label><input type="date"/><br>
+        <label>email</label><input type="email"/><br>
+        <label>button: </label><input type="button" value="enviar"><br>
+        <label>checkbox</label><input type="checkbox" name="opcional1[]" value="queijo"> +queijo<br>
+        <label>checkbox</label><input type="checkbox" name="opcional1[]" value="azeitona">azeitona<br>
+        <input type="radio" name="borda" value="sim">sim<br>
+        <input type="radio" name="borda" value="não">sim<br>
+    </form>
+</body>
+</html>
